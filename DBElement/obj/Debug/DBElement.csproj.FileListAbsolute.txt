@@ -34,3 +34,11 @@ C:\Users\James\Desktop\Project2Starter-9-23-2015\DBElement\bin\Debug\DBElement.p
 C:\Users\James\Desktop\Project2Starter-9-23-2015\DBElement\bin\Debug\UtilityExtensions.exe
 C:\Users\James\Desktop\Project2Starter-9-23-2015\DBElement\bin\Debug\UtilityExtensions.pdb
 C:\Users\James\Desktop\Project2Starter-9-23-2015\DBElement\obj\Debug\DBElement.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\DBElement\bin\Debug\DBElement.exe.config
+C:\Users\lxinghe\Downloads\Project2Starter\DBElement\bin\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBElement\bin\Debug\DBElement.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBElement\bin\Debug\UtilityExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBElement\bin\Debug\UtilityExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBElement\obj\Debug\DBElement.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\DBElement\obj\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBElement\obj\Debug\DBElement.pdb

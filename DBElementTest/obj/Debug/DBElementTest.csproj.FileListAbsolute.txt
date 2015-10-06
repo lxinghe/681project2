@@ -12,3 +12,17 @@ C:\Users\James\Desktop\Project2Starter-9-23-2015\DBElementTest\bin\Debug\DBEngin
 C:\Users\James\Desktop\Project2Starter-9-23-2015\DBElementTest\obj\Debug\DBElementTest.csprojResolveAssemblyReference.cache
 C:\Users\James\Desktop\Project2Starter-9-23-2015\DBElementTest\obj\Debug\DBElementTest.exe
 C:\Users\James\Desktop\Project2Starter-9-23-2015\DBElementTest\obj\Debug\DBElementTest.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\DBElementTest.exe.config
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\obj\Debug\DBElementTest.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\obj\Debug\DBElementTest.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\DBElementTest.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\DBElementTest.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\DBExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\UtilityExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\DBEngine.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\DBElement.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\DBExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\UtilityExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\bin\Debug\DBEngine.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBElementTest\obj\Debug\DBElementTest.csprojResolveAssemblyReference.cache

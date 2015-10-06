@@ -22,3 +22,15 @@ C:\Users\James\Desktop\Project2Starter-9-23-2015\DBExtensions\bin\Debug\DBElemen
 C:\Users\James\Desktop\Project2Starter-9-23-2015\DBExtensions\bin\Debug\DBEngine.pdb
 C:\Users\James\Desktop\Project2Starter-9-23-2015\DBExtensions\bin\Debug\UtilityExtensions.pdb
 C:\Users\James\Desktop\Project2Starter-9-23-2015\DBExtensions\obj\Debug\DBExtensions.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\bin\Debug\DBExtensions.exe.config
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\bin\Debug\DBExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\bin\Debug\DBExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\bin\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\bin\Debug\DBEngine.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\bin\Debug\UtilityExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\bin\Debug\DBElement.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\bin\Debug\DBEngine.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\bin\Debug\UtilityExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\obj\Debug\DBExtensions.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\obj\Debug\DBExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\DBExtensions\obj\Debug\DBExtensions.pdb

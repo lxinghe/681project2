@@ -55,10 +55,12 @@ namespace Project2Starter
   public class DBEngine<Key, Value>
   {
     private Dictionary<Key, Value> dbStore;
+	
     public DBEngine()
     {
       dbStore = new Dictionary<Key, Value>();
     }
+	
     public bool insert(Key key, Value val)
     {
       if (dbStore.Keys.Contains(key))
@@ -66,6 +68,7 @@ namespace Project2Starter
       dbStore[key] = val;
       return true;
     }
+	
     public bool getValue(Key key, out Value val)
     {
       if(dbStore.Keys.Contains(key))
@@ -76,13 +79,32 @@ namespace Project2Starter
       val = default(Value);
       return false;
     }
+	
     public IEnumerable<Key> Keys()
     {
       return dbStore.Keys;
     }
+	
     /*
      * More functions to implement here
      */
+	 
+	public void delete(Key key)
+	{
+		if(dbStore.Keys.Contains(key))
+      {
+        dbStore.Remove(key);
+		WriteLine();
+        Write("Element with key " + key + " has been removed");
+		WriteLine();
+      }
+	  
+	  else{
+       WriteLine();
+       Write("Key " + key + " not found!");
+       WriteLine();
+      }
+	}
   }
 
 #if(TEST_DBENGINE)

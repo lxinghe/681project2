@@ -55,12 +55,39 @@ namespace Project2Starter
       elem.payload = "elem's payload";
       elem.showElement();
       db.insert(1, elem);
+	  Write("\n\n Show key/value pairs in data base:\n");
       db.showDB();
       WriteLine();
     }
-    void TestR3()
+    void TestR3()//addition and deletion of key/value pairs
     {
       "Demonstrating Requirement #3".title();
+	  WriteLine();
+	  
+	  Write("\n --- Test addition of key/value pairs Start---");
+	  WriteLine();
+	  DBElement<int, string> elem1 = new DBElement<int, string>();
+      elem1.name = "element#1";//add a new key/value pairs
+      elem1.descr = "test element#1";
+      elem1.timeStamp = DateTime.Now;
+      elem1.children.AddRange(new List<int>{ 6, 8 });
+      elem1.payload = "elem#1's payload";
+      elem1.showElement();
+      db.insert(2, elem1);
+	  Write("\n\n Show key/value pairs in data base:\n");
+      db.showDB();
+      WriteLine();
+	  Write("\n --- Test addition of key/value pairs End---");
+	  WriteLine();
+	  
+	  Write("\n --- Test deletion of key/value pairs Start---");
+	  WriteLine();
+	  db.delete(1);//delete an existing key/value pairs
+	  Write("\n\n Show key/value pairs in data base:\n");
+      db.showDB();
+      WriteLine();
+      db.delete(100);//try to delete a key/value pairs that doesn't exist
+	  Write("\n --- Test deletion of key/value pairs End---");
       WriteLine();
     }
     void TestR4()

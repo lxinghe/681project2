@@ -31,3 +31,17 @@ C:\Users\James\Desktop\Project2Starter-9-23-2015\Display\bin\Debug\DBEngine.pdb
 C:\Users\James\Desktop\Project2Starter-9-23-2015\Display\bin\Debug\DBExtensions.pdb
 C:\Users\James\Desktop\Project2Starter-9-23-2015\Display\bin\Debug\UtilityExtensions.pdb
 C:\Users\James\Desktop\Project2Starter-9-23-2015\Display\obj\Debug\Display.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\Display.exe.config
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\Display.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\Display.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\DBEngine.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\DBExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\UtilityExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\DBElement.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\DBEngine.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\DBExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\Display\bin\Debug\UtilityExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\Display\obj\Debug\Display.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\Display\obj\Debug\Display.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Display\obj\Debug\Display.pdb
