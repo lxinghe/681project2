@@ -79,6 +79,15 @@ namespace Project2Starter
       val = default(Value);
       return false;
     }
+	
+	public bool emptyDictionary()
+	{
+		if(dbStore.Count==0)
+			return true;
+		
+		else
+			return false;
+	}
 
     public bool containsKey(Key key) {
 
@@ -115,10 +124,11 @@ namespace Project2Starter
       }
 	}
 	
-	/*public void editName(Key key, string newName){
-		
-		dbStore[key].name = newName;
-	}*/
+	/*public void toXML()
+    {
+		PersistToXML<Key, Value> xml = new PersistToXML<Key, Value>(dbStore);
+		xml.writeXML();
+    }*/
   }
 
 #if(TEST_DBENGINE)

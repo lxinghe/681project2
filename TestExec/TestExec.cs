@@ -43,8 +43,9 @@ namespace Project2Starter
   class TestExec
   {
     private DBEngine<int, DBElement<int, string>> db = new DBEngine<int, DBElement<int, string>>();
+    //private DBEngine<int, DBElement<int, string>> db2 = new DBEngine<int, DBElement<int, string>>();
 
-    void TestR2()
+        void TestR2()
     {
       "Demonstrating Requirement #2".title();
       DBElement<int, string> elem = new DBElement<int, string>();
@@ -92,15 +93,14 @@ namespace Project2Starter
       WriteLine();
     }
 	
-    void TestR4(){//support editing of value including the addition and/or deletion of relationships, editing text metadata and replacing an
-				 //existing value's instance with a new instance
-    
-      "Demonstrating Requirement #4".title();
+    void TestR4(){//support editing of value including the addition and/or deletion of relationships, 
+                  //editing text metadata and replacing an existing value's instance with a new instance
+
+            "Demonstrating Requirement #4".title();
 
         DBElement<int, string> temp = new DBElement<int, string>();
         ItemEditor<int, string> editItem;
 		
-		/******************************************************************/
         if (db.containsKey(2)){
             db.getValue(2, out temp);
 			Write("\n\n --- value before modified---\n");
@@ -123,10 +123,8 @@ namespace Project2Starter
 
         else
 			Write("Value not found!");
-		/******************************************************************/
-          
 		
-       Write("\n\n Show key/value pairs in data base:\n");
+      //Write("\n\n Show key/value pairs in data base:\n");
 	  //db.showDB();
       WriteLine();
       WriteLine();
@@ -135,6 +133,21 @@ namespace Project2Starter
     void TestR5()
     {
       "Demonstrating Requirement #5".title();
+	  
+	  
+	  DBElement<int, string> elem2 = new DBElement<int, string>();
+      elem2.name = "element#2";//add a new key/value pairs
+      elem2.descr = "test element#2";
+      elem2.timeStamp = DateTime.Now;
+      elem2.children.AddRange(new List<int>{ 16, 48 });
+      elem2.payload = "elem#2's payload";
+      //elem2.showElement();
+      db.insert(7, elem2);
+	 
+	  PersistToXML toxml  = new PersistToXML(db);
+	  toxml.writeXML();
+	  
+       //db.toXML();
       WriteLine();
     }
 	

@@ -51,3 +51,5 @@ C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\DBExtensions.pdb
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\obj\Debug\TestExec.csprojResolveAssemblyReference.cache
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\ItemEditor.exe
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\ItemEditor.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\PersistToXML.exe
+C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\PersistToXML.pdb

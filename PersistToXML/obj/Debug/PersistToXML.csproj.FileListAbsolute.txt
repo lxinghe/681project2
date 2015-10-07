@@ -1,0 +1,12 @@
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\bin\Debug\PersistToXML.exe.config
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\bin\Debug\PersistToXML.exe
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\bin\Debug\PersistToXML.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\obj\Debug\PersistToXML.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\obj\Debug\PersistToXML.exe
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\obj\Debug\PersistToXML.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\bin\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\bin\Debug\DBEngine.exe
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\bin\Debug\UtilityExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\bin\Debug\DBElement.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\bin\Debug\DBEngine.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\PersistToXML\bin\Debug\UtilityExtensions.pdb
