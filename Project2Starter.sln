@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemEditor", "ItemEditor\It
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistToXML", "PersistToXML\PersistToXML.csproj", "{A282614D-27F9-4AAF-B1C4-64322AF730B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadXML", "LoadXML\LoadXML.csproj", "{ADBD2045-10AC-49B4-98B2-0D8B345ACA74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{A282614D-27F9-4AAF-B1C4-64322AF730B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A282614D-27F9-4AAF-B1C4-64322AF730B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A282614D-27F9-4AAF-B1C4-64322AF730B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADBD2045-10AC-49B4-98B2-0D8B345ACA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBD2045-10AC-49B4-98B2-0D8B345ACA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBD2045-10AC-49B4-98B2-0D8B345ACA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBD2045-10AC-49B4-98B2-0D8B345ACA74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -102,10 +102,6 @@ namespace Project2Starter
     {
       return dbStore.Keys;
     }
-	
-    /*
-     * More functions to implement here
-     */
 	 
 	public void delete(Key key)
 	{
@@ -124,11 +120,11 @@ namespace Project2Starter
       }
 	}
 	
-	/*public void toXML()
-    {
-		PersistToXML<Key, Value> xml = new PersistToXML<Key, Value>(dbStore);
-		xml.writeXML();
-    }*/
+	public void emptyDBEngine()//used to clear the key/value pairs in dictionary, that is, empty the DBEngine.
+	{
+		dbStore.Clear();
+	}
+	
   }
 
 #if(TEST_DBENGINE)

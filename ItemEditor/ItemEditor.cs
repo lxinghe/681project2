@@ -60,8 +60,6 @@ namespace Project2Starter
 		public void replaceWithInstance(out DBElement<Key, Data> newElem){
 			newElem = element;
 		}
-		
-		
     }
 
     class Program

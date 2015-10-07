@@ -1,0 +1,12 @@
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\bin\Debug\LoadXML.exe.config
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\bin\Debug\LoadXML.exe
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\bin\Debug\LoadXML.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\bin\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\bin\Debug\DBEngine.exe
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\bin\Debug\UtilityExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\bin\Debug\DBElement.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\bin\Debug\DBEngine.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\bin\Debug\UtilityExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\obj\Debug\LoadXML.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\obj\Debug\LoadXML.exe
+C:\Users\lxinghe\Downloads\Project2Starter\LoadXML\obj\Debug\LoadXML.pdb

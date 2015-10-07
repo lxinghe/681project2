@@ -66,6 +66,10 @@
       <Project>{b5c66f1a-487e-4bf8-9760-354c814f1cbe}</Project>
       <Name>ItemEditor</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LoadXML\LoadXML.csproj">
+      <Project>{adbd2045-10ac-49b4-98b2-0d8b345aca74}</Project>
+      <Name>LoadXML</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PersistToXML\PersistToXML.csproj">
       <Project>{a282614d-27f9-4aaf-b1c4-64322af730b9}</Project>
       <Name>PersistToXML</Name>

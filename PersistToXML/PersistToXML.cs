@@ -32,10 +32,10 @@ namespace Project2Starter
 			if(db1.emptyDictionary())
 				Write("\n\nThe database is empty.\n");
 		
-			else{
+			else{//if the dictionary is not empty store key/value pairs into a XML file
+			
 					DBElement<int, string> temp = new DBElement<int, string>();
 					IEnumerable<int> keys = db1.Keys();
-					//List<Key> keyList = new List<Key>(db1.keys());
 					XDocument xml = new XDocument();
 					xml.Declaration = new XDeclaration("1.0", "utf-8", "yes");
 					
@@ -62,7 +62,7 @@ namespace Project2Starter
 						XElement timeStamp = new XElement("timeStamp", temp.timeStamp);//timeStamp of the element
 						element.Add(timeStamp);
 						
-						if(temp.children.Count!=0)////children of the element
+						if(temp.children.Count!=0)//children of the element
 						{
 							XElement children = new XElement("children");
 							element.Add(children);
@@ -82,6 +82,8 @@ namespace Project2Starter
 					Console.Write(xml.ToString());
 					Console.Write("\n\n");
 					xml.Save(@"C:\Users\lxinghe\Downloads\Project2Starter\Test.xml");
+					
+					db1.emptyDBEngine();//empty DBEngine
 				}
 		}
 	}

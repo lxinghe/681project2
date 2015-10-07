@@ -133,8 +133,6 @@ namespace Project2Starter
     void TestR5()
     {
       "Demonstrating Requirement #5".title();
-	  
-	  
 	  DBElement<int, string> elem2 = new DBElement<int, string>();
       elem2.name = "element#2";//add a new key/value pairs
       elem2.descr = "test element#2";
@@ -147,7 +145,14 @@ namespace Project2Starter
 	  PersistToXML toxml  = new PersistToXML(db);
 	  toxml.writeXML();
 	  
-       //db.toXML();
+	  Write("\n --- Test read XML file Start---");
+      LoadXML fromxml = new LoadXML(db, @"C:\Users\lxinghe\Downloads\Project2Starter\ReadFile.xml");
+	  fromxml.WriteToDBEngine();
+	  
+	  Write("\n\n Show key/value pairs in data base:\n");
+      db.showDB();
+	  
+	  Write("\n --- Test read XML file End---");
       WriteLine();
     }
 	
