@@ -59,6 +59,7 @@ namespace Project2Starter
       db.showDB();
       WriteLine();
     }
+	
     void TestR3()//addition and deletion of key/value pairs
     {
       "Demonstrating Requirement #3".title();
@@ -90,31 +91,71 @@ namespace Project2Starter
 	  Write("\n --- Test deletion of key/value pairs End---");
       WriteLine();
     }
-    void TestR4()
-    {
+	
+    void TestR4(){//support editing of value including the addition and/or deletion of relationships, editing text metadata and replacing an
+				 //existing value's instance with a new instance
+    
       "Demonstrating Requirement #4".title();
+
+        DBElement<int, string> temp = new DBElement<int, string>();
+        ItemEditor<int, string> editItem;
+		
+		/******************************************************************/
+        if (db.containsKey(2)){
+            db.getValue(2, out temp);
+			Write("\n\n --- value before modified---\n");
+			temp.showElement();
+            editItem = new ItemEditor<int, string>(temp);
+			editItem.nameEdit("newName!!");//edit the name of the value with key 2
+			editItem.descrEdit("new description!!");//edit description
+			editItem.dateTimeEdit();//update timeStamp
+			editItem.addRelationship(18);//add relationship
+			editItem.deleteRelationship(6);//delete relationship
+			editItem.payloadEdit("new payload!!");//modify payload
+			
+			DBElement<int, string> elemNew = new DBElement<int, string>();
+			editItem.replaceWithInstance(out elemNew);// replace an existing value's instance with a new instance
+			temp = null;
+			Write("\n\n --- value after modified---\n");
+			elemNew.showElement();
+            editItem = null;
+        }
+
+        else
+			Write("Value not found!");
+		/******************************************************************/
+          
+		
+       Write("\n\n Show key/value pairs in data base:\n");
+	  //db.showDB();
+      WriteLine();
       WriteLine();
     }
+	
     void TestR5()
     {
       "Demonstrating Requirement #5".title();
       WriteLine();
     }
+	
     void TestR6()
     {
       "Demonstrating Requirement #6".title();
       WriteLine();
     }
+	
     void TestR7()
     {
       "Demonstrating Requirement #7".title();
       WriteLine();
     }
+	
     void TestR8()
     {
       "Demonstrating Requirement #8".title();
       WriteLine();
     }
+	
     static void Main(string[] args)
     {
       TestExec exec = new TestExec();
@@ -129,5 +170,7 @@ namespace Project2Starter
       exec.TestR8();
       Write("\n\n");
     }
+	
   }
+
 }

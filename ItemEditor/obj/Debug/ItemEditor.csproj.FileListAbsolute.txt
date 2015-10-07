@@ -1,0 +1,10 @@
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\bin\Debug\ItemEditor.exe.config
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\bin\Debug\ItemEditor.exe
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\bin\Debug\ItemEditor.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\obj\Debug\ItemEditor.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\obj\Debug\ItemEditor.exe
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\obj\Debug\ItemEditor.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\bin\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\bin\Debug\UtilityExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\bin\Debug\DBElement.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\ItemEditor\bin\Debug\UtilityExtensions.pdb

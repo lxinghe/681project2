@@ -79,6 +79,15 @@ namespace Project2Starter
       val = default(Value);
       return false;
     }
+
+    public bool containsKey(Key key) {
+
+      if (dbStore.Keys.Contains(key))
+        return true;
+
+      else
+        return false;
+    }
 	
     public IEnumerable<Key> Keys()
     {
@@ -105,6 +114,11 @@ namespace Project2Starter
        WriteLine();
       }
 	}
+	
+	/*public void editName(Key key, string newName){
+		
+		dbStore[key].name = newName;
+	}*/
   }
 
 #if(TEST_DBENGINE)

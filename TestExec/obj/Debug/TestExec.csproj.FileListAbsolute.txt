@@ -49,3 +49,5 @@ C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\Display.pdb
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\UtilityExtensions.pdb
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\DBExtensions.pdb
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\obj\Debug\TestExec.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\ItemEditor.exe
+C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\ItemEditor.pdb

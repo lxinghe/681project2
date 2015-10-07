@@ -62,6 +62,10 @@
       <Project>{84fec583-d643-4465-ada0-c34c9bf8c624}</Project>
       <Name>Display</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ItemEditor\ItemEditor.csproj">
+      <Project>{b5c66f1a-487e-4bf8-9760-354c814f1cbe}</Project>
+      <Name>ItemEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UtilityExtensions\UtilityExtensions.csproj">
       <Project>{7092ac78-846b-424b-9cc3-94e2cb2d3c25}</Project>
       <Name>UtilityExtensions</Name>

@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBEngineTest", "DBEngineTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayloadWrapper", "PayloadWrapper\PayloadWrapper.csproj", "{6830283E-0491-4903-90C6-E2FFEADB37FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemEditor", "ItemEditor\ItemEditor.csproj", "{B5C66F1A-487E-4BF8-9760-354C814F1CBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemFactory", "ItemFactory\ItemFactory.csproj", "{3E2D11A7-8F05-4B2F-ABC1-33C57CC0BD6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{6830283E-0491-4903-90C6-E2FFEADB37FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6830283E-0491-4903-90C6-E2FFEADB37FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6830283E-0491-4903-90C6-E2FFEADB37FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5C66F1A-487E-4BF8-9760-354C814F1CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C66F1A-487E-4BF8-9760-354C814F1CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C66F1A-487E-4BF8-9760-354C814F1CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C66F1A-487E-4BF8-9760-354C814F1CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2D11A7-8F05-4B2F-ABC1-33C57CC0BD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2D11A7-8F05-4B2F-ABC1-33C57CC0BD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2D11A7-8F05-4B2F-ABC1-33C57CC0BD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2D11A7-8F05-4B2F-ABC1-33C57CC0BD6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
