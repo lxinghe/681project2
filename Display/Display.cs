@@ -134,7 +134,12 @@ namespace Project2Starter
       db.show<int, DBElement<int, string>, string>();
     }
 
-    public static void showEnumerableDB(this DBEngine<string, DBElement<string, List<string>>> db)
+        public static void showDBString(this DBEngine<string, DBElement<int, string>> db)
+        {
+            db.show<string, DBElement<int, string>, string>();
+        }
+
+        public static void showEnumerableDB(this DBEngine<string, DBElement<string, List<string>>> db)
     {
       db.show<string, DBElement<string, List<string>>, List<string>, string>();
     }

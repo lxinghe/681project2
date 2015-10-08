@@ -1,0 +1,12 @@
+C:\Users\lxinghe\Downloads\Project2Starter\Query\obj\Debug\Query.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\Query\bin\Debug\Query.exe.config
+C:\Users\lxinghe\Downloads\Project2Starter\Query\bin\Debug\Query.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Query\bin\Debug\Query.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\Query\bin\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Query\bin\Debug\DBEngine.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Query\bin\Debug\UtilityExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Query\bin\Debug\DBElement.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\Query\bin\Debug\DBEngine.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\Query\bin\Debug\UtilityExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\Query\obj\Debug\Query.exe
+C:\Users\lxinghe\Downloads\Project2Starter\Query\obj\Debug\Query.pdb

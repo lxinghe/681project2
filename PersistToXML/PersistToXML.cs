@@ -75,7 +75,6 @@ namespace Project2Starter
 						
 						XElement payload = new XElement("payload", temp.payload);//payload of the element
 						element.Add(payload);
-				
 					}
 					
 					Console.Write("\n{0}\n", xml.Declaration);

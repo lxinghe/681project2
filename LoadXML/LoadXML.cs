@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+Programmer: Xinghe Lu
+course: CIS681
+Date: 10/01/2015
+Purpose: 
+
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,9 +26,6 @@ namespace Project2Starter
 		{
 			db = database;
 			xml = XDocument.Load(path);
-			//Console.Write("\n{0}\n", xml.Declaration);
-			//Console.Write(xml.ToString());
-			//Console.Write("\n\n");
 		}
 		
 		public void WriteToDBEngine()
@@ -47,7 +52,6 @@ namespace Project2Starter
 		    foreach (var elem in p)
 			{
 				temp = new DBElement<int, string>();  
-                // add the data to objcet
                 temp.name = (elem as XElement).Descendants("name").First().Value;
                 temp.descr = (elem as XElement).Descendants("descr").First().Value;
                 temp.timeStamp = Convert.ToDateTime((elem as XElement).Descendants("timeStamp").First().Value);
@@ -64,8 +68,6 @@ namespace Project2Starter
 				db.insert(keyList[i], temp);
 				i++;
 			}
-			//Console.Write("\n  {0}", elem.Value);
-		  //Console.Write("\n\n");
 		}
     }
 	
