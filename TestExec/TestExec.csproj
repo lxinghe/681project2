@@ -74,6 +74,10 @@
       <Project>{a282614d-27f9-4aaf-b1c4-64322af730b9}</Project>
       <Name>PersistToXML</Name>
     </ProjectReference>
+    <ProjectReference Include="..\QueryKeysDB\QueryKeysDB.csproj">
+      <Project>{33ae50e6-f778-46fc-a014-e567a867cb0c}</Project>
+      <Name>QueryKeysDB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Query\Query.csproj">
       <Project>{cee5f5eb-249f-4224-899d-22f641299a4f}</Project>
       <Name>Query</Name>

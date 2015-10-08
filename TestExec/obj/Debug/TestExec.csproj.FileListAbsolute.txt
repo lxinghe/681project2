@@ -57,3 +57,5 @@ C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\LoadXML.exe
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\LoadXML.pdb
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\Query.exe
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\Query.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\QueryKeysDB.exe
+C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\QueryKeysDB.pdb

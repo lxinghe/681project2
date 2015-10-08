@@ -45,7 +45,7 @@ namespace Project2Starter
   {
     private DBEngine<int, DBElement<int, string>> db = new DBEngine<int, DBElement<int, string>>();
 	private DBEngine<string, DBElement<int, string>> dbString = new DBEngine<string, DBElement<int, string>>();
-    //private DBEngine<int, DBElement<int, string>> db2 = new DBEngine<int, DBElement<int, string>>();
+	private DBEngine<int, DBElement<int, List<int>>> keysFromQuery = new DBEngine<int, DBElement<int, List<int>>>();
 
         void TestR2()
     {
@@ -232,7 +232,6 @@ namespace Project2Starter
 	  Write("\n\n --- Query the keys share a same pattern End---\n");
 	  /*****************************************************************/
 	  Write("\n\n --- Query the keys of value created in the same time interval Start---\n");
-	  //testElem1.timeStamp = new DateTime(2008, 8, 15, 5, 9, 05);
 	  DBElement<int, string> temp = new DBElement<int, string>();
 	  db.getValue(7, out temp);
 	  temp.timeStamp = new DateTime(1991, 4, 15, 8, 9, 05);
@@ -251,6 +250,32 @@ namespace Project2Starter
     void TestR8()
     {
       "Demonstrating Requirement #8".title();
+	  Query<int, int, string> query = new Query<int, int, string>(db);
+	  List<int> keyslist = new List<int>();
+	  DBElement<int, string> temp = new DBElement<int, string>();
+	  db.getValue(7, out temp);
+	  temp.timeStamp = new DateTime(1991, 4, 15, 8, 9, 05);
+	  db.getValue(82, out temp);
+	  temp.timeStamp = new DateTime(1994, 9, 7, 10, 8, 55);
+	  db.showDB();
+	  DateTime dt1 = new DateTime(1990, 4, 15, 5, 9, 05);
+	  DateTime dt2 = new DateTime(1995, 9, 7, 5, 8, 05);
+	  Write("\n\nQuery: keys of value created after 1990/4/15 05:09:05 but before 1995/9/7 05:08:05:");
+	  keyslist = query.keysSameTinterval(dt1, dt2);
+	  
+		 
+	  QueryKeysDB<int> queryStore = new QueryKeysDB<int>(keysFromQuery, keyslist);
+	  queryStore.storeKeys(1, "key set #1", "keys of value created after 1990/4/15 05:09:05 but before 1995/9/7 05:08:05");
+	  
+	  DBElement<int, List<int>> temp2 = new DBElement<int, List<int>>();
+	  
+	  keysFromQuery.getValue(1, out temp2);
+	  List<int> keyslist2 = new List<int>();
+	  keyslist2 = temp2.payload;
+	  Write("\n\nRead keys returned from the query in the new database\n");
+	  foreach(var key in keyslist2)
+	  	 Write("\n"+key);
+	  
       WriteLine();
     }
 	

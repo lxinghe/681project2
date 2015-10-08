@@ -1,0 +1,14 @@
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\QueryKeysDB.exe.config
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\obj\Debug\QueryKeysDB.csprojResolveAssemblyReference.cache
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\QueryKeysDB.exe
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\QueryKeysDB.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\DBElement.exe
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\DBEngine.exe
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\PersistToXML.exe
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\UtilityExtensions.exe
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\DBElement.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\DBEngine.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\PersistToXML.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\bin\Debug\UtilityExtensions.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\obj\Debug\QueryKeysDB.exe
+C:\Users\lxinghe\Downloads\Project2Starter\QueryKeysDB\obj\Debug\QueryKeysDB.pdb
