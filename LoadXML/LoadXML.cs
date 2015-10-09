@@ -2,7 +2,7 @@
 Programmer: Xinghe Lu
 course: CIS681
 Date: 10/01/2015
-Purpose: 
+Purpose: This program will read a XML which contains the key/value pairs to database
 
 */
 
@@ -14,7 +14,7 @@ using System.Xml;
 using System.Xml.Linq;
 using static System.Console;
 
-namespace Project2Starter
+namespace Project2
 {
     public class LoadXML
     {
@@ -25,7 +25,7 @@ namespace Project2Starter
         public LoadXML(DBEngine<int, DBElement<int, string>> database, string path)
 		{
 			db = database;
-			xml = XDocument.Load(path);
+			xml = XDocument.Load(path);//read xml
 			Write(xml.ToString()); 
 		}
 		
@@ -39,7 +39,7 @@ namespace Project2Starter
 
 		    foreach (var elem in q)
 			{
-				int key = Int32.Parse(elem.Value.Substring(3));
+				int key = Int32.Parse(elem.Value.Substring(3));//read all keys and store them to a list
 				keyList.Add(key);
 			}
 			
@@ -53,15 +53,15 @@ namespace Project2Starter
 		    foreach (var elem in p)
 			{
 				temp = new DBElement<int, string>();  
-                temp.name = (elem as XElement).Descendants("name").First().Value;
-                temp.descr = (elem as XElement).Descendants("descr").First().Value;
-                temp.timeStamp = Convert.ToDateTime((elem as XElement).Descendants("timeStamp").First().Value);
-                temp.payload = (elem as XElement).Descendants("payload").First().Value;
+                temp.name = (elem as XElement).Descendants("name").First().Value;//read and store name to element
+                temp.descr = (elem as XElement).Descendants("descr").First().Value;//read and store description to element
+                temp.timeStamp = Convert.ToDateTime((elem as XElement).Descendants("timeStamp").First().Value);//read and store timeStamp to element
+                temp.payload = (elem as XElement).Descendants("payload").First().Value;//read payload and store it to element
 				
 				var a = from x in
                             (elem as XElement).Elements("children").Descendants()
                                     select x;
-				foreach (var child in a)
+				foreach (var child in a)//store key/value pairs into database
                 {
                     temp.children.Add(Int32.Parse(child.Value.Substring(3)));
                 }

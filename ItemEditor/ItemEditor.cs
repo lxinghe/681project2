@@ -3,6 +3,7 @@
 Programmer: Xinghe Lu
 Date: 10/01/2015
 Course: CIS681
+purpose: this program helps to modify the value in database
 
 */
 using System;
@@ -13,7 +14,7 @@ using System.Threading.Tasks;
 using static System.Console;
 
 
-namespace Project2Starter
+namespace Project2
 {
     public class ItemEditor<Key, Data>
     {

@@ -2,7 +2,7 @@
 Programmer: Xinghe Lu
 Course: CIS681
 Date: 10/01/2015
-Purpose: 
+Purpose: this program will store key/value pairs in a dictionary to a XML file.
 */
 
 using System;
@@ -14,7 +14,7 @@ using static System.Console;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Project2Starter
+namespace Project2
 {
     
 	public class PersistToXML 
@@ -80,8 +80,6 @@ namespace Project2Starter
 					
 					
 					xml.Save(path);
-					
-					
 				}
 		}
 		

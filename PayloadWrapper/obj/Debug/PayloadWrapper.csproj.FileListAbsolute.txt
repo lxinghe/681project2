@@ -37,6 +37,5 @@ C:\Users\lxinghe\Downloads\Project2Starter\PayloadWrapper\bin\Debug\DBElement.pd
 C:\Users\lxinghe\Downloads\Project2Starter\PayloadWrapper\bin\Debug\DBExtensions.pdb
 C:\Users\lxinghe\Downloads\Project2Starter\PayloadWrapper\bin\Debug\UtilityExtensions.pdb
 C:\Users\lxinghe\Downloads\Project2Starter\PayloadWrapper\bin\Debug\DBEngine.pdb
-C:\Users\lxinghe\Downloads\Project2Starter\PayloadWrapper\obj\Debug\PayloadWrapper.csprojResolveAssemblyReference.cache
 C:\Users\lxinghe\Downloads\Project2Starter\PayloadWrapper\obj\Debug\PayloadWrapper.exe
 C:\Users\lxinghe\Downloads\Project2Starter\PayloadWrapper\obj\Debug\PayloadWrapper.pdb

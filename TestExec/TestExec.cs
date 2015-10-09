@@ -1,45 +1,19 @@
-﻿///////////////////////////////////////////////////////////////
-// TestExec.cs - Test Requirements for Project #2            //
-// Ver 1.2                                                   //
-// Application: Demonstration for CSE687-OOD, Project#2      //
-// Language:    C#, ver 6.0, Visual Studio 2015              //
-// Platform:    Dell XPS2700, Core-i7, Windows 10            //
-// Author:      Jim Fawcett, CST 4-187, Syracuse University  //
-//              (315) 443-3948, jfawcett@twcny.rr.com        //
-///////////////////////////////////////////////////////////////
-/*
- * Package Operations:
- * -------------------
- * This package begins the demonstration of meeting requirements.
- * Much is left to students to finish.
+﻿/*
+Programmer: Xinghe Lu
+Date 10/01/2015
+Purpose: Used to test every requirement
  */
-/*
- * Maintenance:
- * ------------
- * Required Files: 
- *   TestExec.cs,  DBElement.cs, DBEngine, Display, 
- *   DBExtensions.cs, UtilityExtensions.cs
- *
- * Build Process:  devenv Project2Starter.sln /Rebuild debug
- *                 Run from Developer Command Prompt
- *                 To find: search for developer
- *
- * Maintenance History:
- * --------------------
- * ver 1.1 : 24 Sep 15
- * ver 1.0 : 18 Sep 15
- * - first release
- *
- */
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
+using System.Xml;
+using System.Xml.Linq;
 
-
-namespace Project2Starter
+namespace Project2
 {
   class TestExec
   {
@@ -144,12 +118,12 @@ namespace Project2Starter
       db.insert(7, elem2);
 	 
 	  PersistToXML toxml  = new PersistToXML(db);
-	  toxml.writeXML(@"../../../Test.xml");
+	  toxml.writeXML("Test.xml");
 	  toxml.displayXML();
 	  toxml.cleanDB();
 	  
 	  Write("\n --- Test read XML file Start---");
-      LoadXML fromxml = new LoadXML(db, "../../../ReadFile.xml");
+      LoadXML fromxml = new LoadXML(db, "ReadFile.xml");
 	  fromxml.WriteToDBEngine();
 	  
 	  Write("\n\n Show key/value pairs in data base:\n");
@@ -162,8 +136,6 @@ namespace Project2Starter
     void TestR6()
     {
       "Demonstrating Requirement #6".title();
-	  
-	  WriteLine("\nend of generateXmlFile\n");
 	  Write("\n\n  press any key to stop scheduled save\n");
 	  Scheduler ts = new Scheduler(db);
 	  ts.schedular.Enabled = true;
@@ -282,6 +254,120 @@ namespace Project2Starter
       WriteLine();
     }
 	
+	void TestR9()
+    {
+		"Demonstrating Requirement #9".title();
+		XDocument xml = new XDocument();
+		xml.Declaration = new XDeclaration("1.0", "utf-8", "yes");
+		XElement project2 = new XElement("project2");
+		xml.Add(project2);//root
+		/*************DBElement**************************/
+		XElement DBElement = new XElement("DBElement");
+		project2.Add(DBElement);
+		XElement Reference = new XElement("Reference", "UtilityExtensions");
+		DBElement.Add(Reference);
+		/*************DBElementTest**************************/
+		XElement DBElementTest = new XElement("DBElementTest");
+		project2.Add(DBElementTest);
+		XElement Reference1 = new XElement("Reference", "DBExtensions");
+		DBElementTest.Add(Reference1);
+		XElement Reference2 = new XElement("Reference", "DBElement");
+		DBElementTest.Add(Reference);
+		DBElementTest.Add(Reference);
+		/*************DBEngine**************************/
+		XElement DBEngine = new XElement("DBEngine");
+		project2.Add(DBEngine);
+		DBEngine.Add(Reference);
+		DBEngine.Add(Reference2);
+		/*************DBEngine**************************/
+		XElement DBEngineTest = new XElement("DBEngineTest");
+		project2.Add(DBEngineTest);
+		DBEngineTest.Add(Reference2);
+		DBEngineTest.Add(Reference1);
+		DBEngineTest.Add(Reference);
+		XElement Reference3 = new XElement("Reference", "DBEngine");
+		DBEngineTest.Add(Reference3);
+		/*************DBExtensions**************************/
+		XElement DBExtensions = new XElement("DBExtensions");
+		project2.Add(DBExtensions);
+		DBExtensions.Add(Reference2);
+		DBExtensions.Add(Reference);
+		DBExtensions.Add(Reference3);
+		/*************Display**************************/
+		XElement Display = new XElement("Display");
+		project2.Add(Display);
+		Display.Add(Reference2);
+		Display.Add(Reference);
+		Display.Add(Reference3);
+		Display.Add(Reference1);
+		/*************ItemEditor**************************/
+		XElement ItemEditor = new XElement("ItemEditor");
+		project2.Add(ItemEditor);
+		ItemEditor.Add(Reference2);
+		/*************LoadXML**************************/
+		XElement LoadXML = new XElement("LoadXML");
+		project2.Add(LoadXML);
+		LoadXML.Add(Reference3);
+		LoadXML.Add(Reference2);
+		/*************PayloadWrapper**************************/
+		XElement PayloadWrapper = new XElement("PayloadWrapper");
+		project2.Add(PayloadWrapper);
+		PayloadWrapper.Add(Reference2);
+		PayloadWrapper.Add(Reference);
+		PayloadWrapper.Add(Reference1);
+		/*************PersistToXML**************************/
+		XElement PersistToXML = new XElement("PersistToXML");
+		project2.Add(PersistToXML);
+		PersistToXML.Add(Reference3);
+		PersistToXML.Add(Reference2);
+		/*************Query**************************/
+		XElement Query = new XElement("Query");
+		project2.Add(Query);
+		Query.Add(Reference3);
+		Query.Add(Reference2);
+		/*************QueryKeysDB**************************/
+		XElement QueryKeysDB = new XElement("QueryKeysDB");
+		project2.Add(QueryKeysDB);
+		XElement Reference4 = new XElement("Reference", "PersistToXML");
+		QueryKeysDB.Add(Reference3);
+		QueryKeysDB.Add(Reference2);
+		QueryKeysDB.Add(Reference4);
+		/*************Scheduler**************************/
+		XElement Scheduler = new XElement("Scheduler");
+		project2.Add(Scheduler);
+		Scheduler.Add(Reference3);
+		Scheduler.Add(Reference2);
+		Scheduler.Add(Reference4);
+		/*************TestExec**************************/
+		XElement TestExec = new XElement("TestExec");
+		project2.Add(TestExec);
+		TestExec.Add(Reference2);
+		TestExec.Add(Reference3);
+		XElement Reference5 = new XElement("Reference", "Display");
+		TestExec.Add(Reference5);
+		XElement Reference6 = new XElement("Reference", "ItemEditor");
+		TestExec.Add(Reference6);
+		XElement Reference7 = new XElement("Reference", "LoadXML");
+		TestExec.Add(Reference7);
+		TestExec.Add(Reference4);
+		XElement Reference8 = new XElement("Reference", "Query");
+		TestExec.Add(Reference8);
+		XElement Reference9 = new XElement("Reference", "QueryKeysDB");
+		TestExec.Add(Reference9);
+		XElement Reference10 = new XElement("Reference", "Scheduler");
+		TestExec.Add(Reference10);
+		TestExec.Add(Reference);
+		/*************TestExec**************************/
+		XElement UtilityExtensions = new XElement("UtilityExtensions");
+		project2.Add(UtilityExtensions);
+		
+		
+		xml.Save("Content.xml");
+		Write("\n{0}\n", xml.Declaration);
+			Write(xml.ToString());
+			Write("\n\n");
+	}
+	
     static void Main(string[] args)
     {
       TestExec exec = new TestExec();
@@ -294,6 +380,7 @@ namespace Project2Starter
       exec.TestR6();
       exec.TestR7();
       exec.TestR8();
+	  exec.TestR9();
       Write("\n\n");
     }
 	

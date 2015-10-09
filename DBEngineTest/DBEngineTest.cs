@@ -41,7 +41,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace Project2Starter
+namespace Project2
 {
   class Program
   {

@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+Programmer: Xinghe Lu
+course: CIS681
+Date: 10/01/2015
+Purpose: This program accepts a positive time interval or number of writes after which the database contents are persisted.
+
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +14,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Timers;
 
-namespace Project2Starter
+namespace Project2
 {
     public class Scheduler
     {
@@ -22,7 +30,7 @@ namespace Project2Starter
 			{
 				PersistToXML toxml = new PersistToXML(db);
 				Console.Write("\n  myDBXml.xml was saved at {0}", e.SignalTime);
-				toxml.writeXML("../../../myDBXml.xml");
+				toxml.writeXML("myDBXml.xml");
 			};
 		}
 
