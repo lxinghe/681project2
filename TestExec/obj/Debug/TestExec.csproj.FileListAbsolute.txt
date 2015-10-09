@@ -59,3 +59,5 @@ C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\Query.exe
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\Query.pdb
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\QueryKeysDB.exe
 C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\QueryKeysDB.pdb
+C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\Scheduler.exe
+C:\Users\lxinghe\Downloads\Project2Starter\TestExec\bin\Debug\Scheduler.pdb

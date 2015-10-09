@@ -20,6 +20,7 @@ namespace Project2Starter
 	public class PersistToXML 
 	{
 		private DBEngine<int, DBElement<int, string>> db1;
+		XDocument xml = new XDocument();
 		
 		public PersistToXML(DBEngine<int, DBElement<int, string>> db0)
 		{
@@ -27,8 +28,8 @@ namespace Project2Starter
 			db1 = db0;
 		}
 		
-		public void writeXML()
-		{
+		public void writeXML(string path)
+		{	
 			if(db1.emptyDictionary())
 				Write("\n\nThe database is empty.\n");
 		
@@ -36,7 +37,7 @@ namespace Project2Starter
 			
 					DBElement<int, string> temp = new DBElement<int, string>();
 					IEnumerable<int> keys = db1.Keys();
-					XDocument xml = new XDocument();
+					
 					xml.Declaration = new XDeclaration("1.0", "utf-8", "yes");
 					
 					XElement noSqlDb = new XElement("noSqlDb");
@@ -77,13 +78,23 @@ namespace Project2Starter
 						element.Add(payload);
 					}
 					
-					Console.Write("\n{0}\n", xml.Declaration);
-					Console.Write(xml.ToString());
-					Console.Write("\n\n");
-					xml.Save(@"C:\Users\lxinghe\Downloads\Project2Starter\Test.xml");
 					
-					db1.emptyDBEngine();//empty DBEngine
+					xml.Save(path);
+					
+					
 				}
+		}
+		
+		public void cleanDB()
+		{
+			db1.emptyDBEngine();//empty DBEngine
+		}
+		
+		public void displayXML()
+		{
+			Write("\n{0}\n", xml.Declaration);
+			Write(xml.ToString());
+			Write("\n\n");
 		}
 	}
 	

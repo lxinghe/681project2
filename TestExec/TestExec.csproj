@@ -82,6 +82,10 @@
       <Project>{cee5f5eb-249f-4224-899d-22f641299a4f}</Project>
       <Name>Query</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Scheduler\Scheduler.csproj">
+      <Project>{571db157-7fee-46ab-b195-261b9124cd1e}</Project>
+      <Name>Scheduler</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UtilityExtensions\UtilityExtensions.csproj">
       <Project>{7092ac78-846b-424b-9cc3-94e2cb2d3c25}</Project>
       <Name>UtilityExtensions</Name>

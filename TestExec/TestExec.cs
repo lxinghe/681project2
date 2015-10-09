@@ -141,14 +141,15 @@ namespace Project2Starter
       elem2.timeStamp = DateTime.Now;
       elem2.children.AddRange(new List<int>{ 16, 48 });
       elem2.payload = "elem#2's payload";
-      //elem2.showElement();
       db.insert(7, elem2);
 	 
 	  PersistToXML toxml  = new PersistToXML(db);
-	  toxml.writeXML();
+	  toxml.writeXML(@"../../../Test.xml");
+	  toxml.displayXML();
+	  toxml.cleanDB();
 	  
 	  Write("\n --- Test read XML file Start---");
-      LoadXML fromxml = new LoadXML(db, @"C:\Users\lxinghe\Downloads\Project2Starter\ReadFile.xml");
+      LoadXML fromxml = new LoadXML(db, "../../../ReadFile.xml");
 	  fromxml.WriteToDBEngine();
 	  
 	  Write("\n\n Show key/value pairs in data base:\n");
@@ -161,6 +162,12 @@ namespace Project2Starter
     void TestR6()
     {
       "Demonstrating Requirement #6".title();
+	  
+	  WriteLine("\nend of generateXmlFile\n");
+	  Write("\n\n  press any key to stop scheduled save\n");
+	  Scheduler ts = new Scheduler(db);
+	  ts.schedular.Enabled = true;
+	  Console.ReadKey();
       WriteLine();
     }
 	
@@ -191,7 +198,6 @@ namespace Project2Starter
       elemR701.timeStamp = DateTime.Now;
       elemR701.children.AddRange(new List<int>{ 1, 2, 3 });
       elemR701.payload = "cs";
-	  //elemR701.showElement();
       dbString.insert("SU cs dep", elemR701);
 	  DBElement<int, string> elemR702 = new DBElement<int, string>();
       elemR702.name = "r702";
@@ -199,7 +205,6 @@ namespace Project2Starter
       elemR702.timeStamp = DateTime.Now;
       elemR702.children.AddRange(new List<int>{ 4, 5, 2 });
       elemR702.payload = "math";
-	  //elemR702.showElement();
       dbString.insert("SU math dep", elemR702);
 	  DBElement<int, string> elemR703 = new DBElement<int, string>();
       elemR703.name = "r703";
@@ -207,9 +212,7 @@ namespace Project2Starter
       elemR703.timeStamp = DateTime.Now;
       elemR703.children.AddRange(new List<int>{ 4, 5, 2 });
       elemR703.payload = "music";
-	  //elemR703.showElement();
       dbString.insert("CORNELL music dep", elemR703);
-	  //dbString.showDBString();
 	  IEnumerable<string> keys = dbString.Keys();
 	  Write("All keys in this database:");
 	  foreach(var key in keys)

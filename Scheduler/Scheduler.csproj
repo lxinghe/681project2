@@ -49,6 +49,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBElement\DBElement.csproj">
+      <Project>{1d9fdb3e-8c03-493f-8d76-0443b298e854}</Project>
+      <Name>DBElement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBEngine\DBEngine.csproj">
+      <Project>{9f039b4c-22c7-488b-9e2f-b7224cc46a2d}</Project>
+      <Name>DBEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersistToXML\PersistToXML.csproj">
+      <Project>{a282614d-27f9-4aaf-b1c4-64322af730b9}</Project>
+      <Name>PersistToXML</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

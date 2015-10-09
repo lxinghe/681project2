@@ -26,6 +26,7 @@ namespace Project2Starter
 		{
 			db = database;
 			xml = XDocument.Load(path);
+			Write(xml.ToString()); 
 		}
 		
 		public void WriteToDBEngine()
